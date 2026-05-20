@@ -1,10 +1,10 @@
-# BangCrab Healthcare Ontology Simulator
+# Demo Healthcare Ontology
 
 GitHub Pages 정적 대시보드입니다. 헬스케어 온톨로지팩 데이터를 HTML/JSON 안에 내장해 서버 없이 레버 조정, 결과 변화, 시나리오 전수조사, evidence/graph 패널을 실행합니다.
 
 ## Live
 
-GitHub Pages 배포 후 `https://tteggu87.github.io/bangcrab-healthcare-ontology-simulator-pages/` 에서 열립니다.
+GitHub Pages 배포 후 `https://tteggu87.github.io/demo-healthcare-ontology/` 에서 열립니다.
 
 ## Notes
 
