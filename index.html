@@ -1706,38 +1706,224 @@ Error generating stack: `+a.message+`
       }
 
       @media (max-width: 760px) {
+        body {
+          background:
+            linear-gradient(180deg, #ffffff 0, #ffffff 86px, var(--nv-page) 86px),
+            var(--nv-page) !important;
+        }
+
         .app-shell,
         .app-shell--cockpit {
-          padding: 12px !important;
+          padding: 8px 10px 34px !important;
         }
 
         .cockpit-header {
           grid-template-columns: 1fr !important;
-          gap: 16px !important;
-          padding: 22px 18px !important;
+          gap: 10px !important;
+          margin-bottom: 10px !important;
+          padding: 16px 16px 17px !important;
+          border-radius: 20px !important;
         }
 
         .cockpit-header::after {
-          display: none !important;
+          position: relative !important;
+          display: flex !important;
+          inset: auto !important;
+          order: 3 !important;
+          width: 100% !important;
+          height: 44px !important;
+          margin-top: 2px !important;
+          padding: 0 58px 0 16px !important;
+          box-shadow: inset -48px 0 0 var(--nv-brand) !important;
+          font-size: 0.84rem !important;
         }
 
         .cockpit-header h1,
         .hero h1 {
-          font-size: clamp(2.15rem, 10.8vw, 3.65rem) !important;
-          line-height: 1.02 !important;
+          max-width: 350px !important;
+          font-size: clamp(1.86rem, 9.1vw, 2.85rem) !important;
+          line-height: 0.99 !important;
+          letter-spacing: -0.075em !important;
+        }
+
+        .eyebrow {
+          margin-bottom: 7px !important;
+          padding: 3px 7px !important;
+          font-size: 0.66rem !important;
         }
 
         .cockpit-header__status {
+          order: 2 !important;
           justify-content: flex-start !important;
+          gap: 6px !important;
           max-width: none !important;
+        }
+
+        .cockpit-header__status span,
+        .status-pill {
+          min-height: 29px !important;
+          padding: 5px 9px !important;
+          font-size: 0.76rem !important;
+        }
+
+        .safety-ribbon {
+          margin-bottom: 10px !important;
+          padding: 12px 14px !important;
+          border-radius: 16px !important;
+          font-size: 0.86rem !important;
+          line-height: 1.5 !important;
         }
 
         .decision-cockpit {
           grid-template-columns: 1fr !important;
-          gap: 14px !important;
+          gap: 10px !important;
+        }
+
+        .cockpit-panel {
+          border-radius: 18px !important;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04),
+            0 8px 22px rgba(0, 0, 0, 0.05) !important;
+        }
+
+        .control-desk,
+        .conclusion-card,
+        .outcome-board {
+          padding: 14px !important;
+        }
+
+        .panel-heading {
+          gap: 9px !important;
+          margin-bottom: 12px !important;
+          padding-bottom: 12px !important;
+        }
+
+        .panel-step {
+          width: 31px !important;
+          height: 31px !important;
+          font-size: 0.86rem !important;
+        }
+
+        .panel-heading h2 {
+          font-size: 1.3rem !important;
+          line-height: 1.03 !important;
+        }
+
+        .panel-heading p {
+          margin-top: 4px !important;
+          font-size: 0.82rem !important;
+          line-height: 1.42 !important;
         }
 
         .control-stack {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          gap: 8px !important;
+        }
+
+        .field-control {
+          gap: 5px !important;
+        }
+
+        .field-control span {
+          display: grid !important;
+          gap: 2px !important;
+          align-items: start !important;
+          min-height: 33px !important;
+        }
+
+        .field-control span,
+        .threshold-control strong {
+          font-size: 0.78rem !important;
+          line-height: 1.2 !important;
+        }
+
+        .field-control small,
+        .threshold-control small {
+          font-size: 0.61rem !important;
+          letter-spacing: 0 !important;
+        }
+
+        .field-control select {
+          min-height: 42px !important;
+          padding: 0 9px !important;
+          border-width: 1px !important;
+          border-radius: 13px !important;
+          font-size: 0.82rem !important;
+        }
+
+        .threshold-stack {
+          gap: 10px !important;
+          margin-top: 12px !important;
+          padding-top: 12px !important;
+        }
+
+        .threshold-control {
+          gap: 7px !important;
+        }
+
+        .threshold-control > div:first-child {
+          align-items: center !important;
+        }
+
+        .ghost-button {
+          min-width: 42px !important;
+          min-height: 42px !important;
+          padding: 0 10px !important;
+          border: 1px solid var(--nv-border) !important;
+          border-radius: 999px !important;
+          background: #fff !important;
+          font-size: 0.72rem !important;
+        }
+
+        .segmented-buttons {
+          display: grid !important;
+          grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+          gap: 6px !important;
+        }
+
+        .segment {
+          justify-content: center !important;
+          min-height: 42px !important;
+          padding: 6px 5px !important;
+          border-radius: 12px !important;
+          font-size: 0.72rem !important;
+          white-space: nowrap !important;
+        }
+
+        .reset-button {
+          min-height: 44px !important;
+          margin-top: 12px !important;
+          border-radius: 14px !important;
+        }
+
+        .hero-metric {
+          margin: 0 0 10px !important;
+          padding: 14px !important;
+          border-radius: 18px !important;
+        }
+
+        .hero-metric strong {
+          font-size: clamp(3.15rem, 18vw, 4.75rem) !important;
+        }
+
+        .metric-ladder {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          gap: 8px !important;
+        }
+
+        .metric-ladder article,
+        .mini-comparison > div,
+        .verdict,
+        .next-best,
+        .lever-ledger,
+        .evidence-peek article {
+          border-radius: 16px !important;
+        }
+
+        .metric-ladder strong {
+          font-size: 1.32rem !important;
+        }
+
+        .mini-comparison {
           grid-template-columns: 1fr !important;
         }
 
@@ -1748,6 +1934,20 @@ Error generating stack: `+a.message+`
         .scenario-row__aside {
           grid-column: 1 / -1 !important;
           justify-items: stretch !important;
+        }
+      }
+
+      @media (max-width: 430px) {
+        .control-stack {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+
+        .segmented-buttons {
+          grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+        }
+
+        .threshold-control:last-of-type .segmented-buttons {
+          grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
         }
       }
     </style>
